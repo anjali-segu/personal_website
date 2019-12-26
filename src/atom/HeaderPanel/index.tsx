@@ -6,6 +6,8 @@ import Box from '@material-ui/core/Box'
 import Typography from '@material-ui/core/Typography'
 import {Theme, makeStyles} from '@material-ui/core/styles'
 
+import {white} from '../../utils/theme'
+
 interface Props {
   image: string,
   title: string,
@@ -31,7 +33,7 @@ const useStyles = makeStyles(
         minHeight: theme.spacing(60),
       },
       title: {
-        color: 'rgba(255,255,255,.97)',
+        color: white,
         paddingBottom: theme.spacing(10),
         paddingLeft: theme.spacing(5),
         paddingRight: theme.spacing(5),
