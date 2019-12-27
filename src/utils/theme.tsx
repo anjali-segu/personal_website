@@ -1,15 +1,36 @@
 import {createMuiTheme} from '@material-ui/core/styles'
 
-export const white = 'rgba(255,255,255,.97)'
-export const beige = 'rgba(250, 234, 185)'
-export const gray = 'rgb(245, 245, 245)'
-export const lightbeige = 'rgb(245, 236, 228)'
-export const lightblack = 'rgba(0,0,0,0.7)'
+export const white = 'rgba(255, 255, 255, .97)'
+export const black = 'rgba(0, 0, 0, .97)'
+export const beige = 'rgba(250, 234, 185, 1)'
+export const gray = 'rgba(245, 245, 245, 1)'
+export const lightbeige = 'rgba(245, 236, 228, 1)'
+export const lightblack = 'rgba(0, 0, 0, 0.7)'
+export const charcoal = 'rgba(13, 13, 13, 1)'
+export const tan = 'rgba(225, 168, 122,1)'
 
 
 export const theme = createMuiTheme({
   // Any overrides will go here ..
   overrides: {
+    MuiButton: {
+      containedPrimary: {
+        color: white,
+        border: `1px solid ${tan}`,
+        backgroundColor: 'transparent',
+        borderRadius: 0,
+        '&:hover': {
+          color: black,
+          backgroundColor: tan,
+        },
+      },
+      containedSizeLarge: {
+        paddingBottom: '16px',
+        paddingLeft: '32px',
+        paddingRight: '32px',
+        paddingTop: '16px',
+      }
+    },
     MuiAppBar: {
       root: {
         alignItems: 'center',
@@ -21,29 +42,34 @@ export const theme = createMuiTheme({
     },
     MuiTypography: {
       h1: {
-        fontFamily: 'Playfair Display, serif',
+        fontFamily: 'Poly, serif',
       },
       h2: {
-        fontFamily: 'Playfair Display, serif',
+        fontFamily: 'Poly, serif',
       },
       h3: {
-        fontFamily: 'Playfair Display, serif',
+        fontFamily: 'Poly, serif',
       },
       h4: {
-        fontFamily: 'News Cycle, open sans, sans-serif',
+        fontFamily: 'Poly, serif',
         color: lightblack,
       },
       h5: {
-        fontFamily: 'News Cycle, open sans, sans-serif',
+        fontFamily: 'Ubuntu, sans-serif',
         color: lightblack,
       },
       h6: {
-        fontFamily: 'News Cycle, open sans, sans-serif',
+        fontFamily: 'Ubuntu, sans-serif',
         color: lightblack,
       },
     }
   },
   typography: {
     fontFamily: 'Quicksand, open sans, sans-serif',
+  },
+  palette: {
+    primary: {
+      main: tan,
+    },
   },
 })

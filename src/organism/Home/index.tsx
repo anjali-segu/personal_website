@@ -2,6 +2,7 @@ import React from 'react';
 
 import HeaderPanel from '../../atom/HeaderPanel'
 import Bio from '../../molecule/Bio'
+import Summary from '../../molecule/Summary'
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
         title={'Anjali Segu'}
       />
       <Bio/>
+      <Summary/>
     </React.Fragment>
   )
 }
