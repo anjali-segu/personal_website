@@ -34,7 +34,7 @@ const useStyles = makeStyles(
       },
       title: {
         color: white,
-        paddingBottom: theme.spacing(10),
+        paddingBottom: theme.spacing(4),
         paddingLeft: theme.spacing(5),
         paddingRight: theme.spacing(5),
         paddingTop: theme.spacing(30),

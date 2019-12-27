@@ -8,6 +8,12 @@ import Navbar from './organism/Navbar'
 
 import HeaderPanel from './atom/HeaderPanel'
 
+import Panel from './atom/Panel'
+
+import Bio from './molecule/Bio'
+
+import Typography from '@material-ui/core/Typography'
+
 
 const App: React.FC = () => {
   return (
@@ -17,6 +23,7 @@ const App: React.FC = () => {
         image={'computercoffee.jpeg'}
         title={'Anjali Segu'}
       />
+      <Bio/>
     </ThemeProvider>
   );
 }
