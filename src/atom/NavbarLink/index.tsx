@@ -1,6 +1,8 @@
 import * as React from 'react'
 import Button from '@material-ui/core/Button'
 import {Theme, makeStyles} from '@material-ui/core/styles'
+import {Link as RouterLink} from 'react-router-dom'
+
 import {white, beige} from '../../utils/theme'
 
 interface Props {
@@ -22,15 +24,15 @@ const useStyles = makeStyles(
   }
 )
 
-const defaultHandler = (event:any) => {
-  event.preventDefault()
-}
-
 const NavbarLink = (props:Props) => {
   const {content, url} = props
   const classes = useStyles()
   return (
-    <Button className={classes.link} href={url} onClick={defaultHandler}>
+    <Button
+      className={classes.link}
+      component={RouterLink}
+      to={url}
+    >
       {content}
     </Button>
   )

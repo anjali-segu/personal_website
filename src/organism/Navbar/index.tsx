@@ -14,19 +14,19 @@ const Navbar = (props:Props) => {
       <Toolbar>
         <NavbarLink
           content={'portfolio'}
-          url={'#'}
+          url={'/portfolio'}
         />
         <NavbarLink
           content={'about'}
-          url={'#'}
+          url={'/about'}
         />
         <NavbarLink
           content={'resume'}
-          url={'#'}
+          url={'/resume'}
         />
         <NavbarLink
           content={'contact'}
-          url={'#'}
+          url={'/contact'}
         />
       </Toolbar>
     </AppBar>

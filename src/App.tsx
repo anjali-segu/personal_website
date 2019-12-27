@@ -5,25 +5,42 @@ import {ThemeProvider} from '@material-ui/core/styles'
 import {theme} from './utils/theme'
 
 import Navbar from './organism/Navbar'
+import Home from './organism/Home'
 
-import HeaderPanel from './atom/HeaderPanel'
-
-import Panel from './atom/Panel'
-
-import Bio from './molecule/Bio'
-
-import Typography from '@material-ui/core/Typography'
-
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+} from 'react-router-dom'
 
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Navbar/>
-      <HeaderPanel
-        image={'computercoffee.jpeg'}
-        title={'Anjali Segu'}
-      />
-      <Bio/>
+      <Router>
+        <Navbar/>
+
+        <Switch>
+          <Route path="/" exact>
+            <Home />
+          </Route>
+
+          <Route path="/portfolio" exact>
+            <Home />
+          </Route>
+
+          <Route path="/about" exact>
+            <Home />
+          </Route>
+
+          <Route path="/resume" exact>
+            <Home />
+          </Route>
+
+          <Route path="/contact" exact>
+            <Home />
+          </Route>
+        </Switch>
+      </Router>
     </ThemeProvider>
   );
 }
