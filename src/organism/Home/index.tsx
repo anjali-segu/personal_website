@@ -3,6 +3,7 @@ import React from 'react';
 import HeaderPanel from '../../atom/HeaderPanel'
 import Bio from '../../molecule/Bio'
 import Summary from '../../molecule/Summary'
+import Showcase from '../../molecule/Showcase'
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       />
       <Bio/>
       <Summary/>
+      <Showcase/>
     </React.Fragment>
   )
 }

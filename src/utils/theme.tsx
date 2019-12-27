@@ -24,11 +24,27 @@ export const theme = createMuiTheme({
           backgroundColor: tan,
         },
       },
+      containedSecondary: {
+        color: white,
+        border: `1px solid ${white}`,
+        backgroundColor: 'transparent',
+        borderRadius: 0,
+        '&:hover': {
+          color: black,
+          backgroundColor: white,
+        },
+      },
       containedSizeLarge: {
         paddingBottom: '16px',
         paddingLeft: '32px',
         paddingRight: '32px',
         paddingTop: '16px',
+      }
+    },
+    MuiCard: {
+      root: {
+        borderRadius: 0,
+        boxShadow: 'none',
       }
     },
     MuiAppBar: {
