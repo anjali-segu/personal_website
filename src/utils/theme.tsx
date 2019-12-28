@@ -14,6 +14,12 @@ export const theme = createMuiTheme({
   // Any overrides will go here ..
   overrides: {
     MuiButton: {
+      contained: {
+        boxShadow: 'none',
+        '&:hover': {
+          boxShadow: 'none',
+        },
+      },
       containedPrimary: {
         color: white,
         border: `1px solid ${tan}`,
@@ -45,6 +51,12 @@ export const theme = createMuiTheme({
       root: {
         borderRadius: 0,
         boxShadow: 'none',
+        overflow: 'unset',
+      }
+    },
+    MuiDialog: {
+      paper: {
+        borderRadius: 0,
       }
     },
     MuiAppBar: {
