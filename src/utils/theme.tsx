@@ -92,6 +92,7 @@ export const theme = createMuiTheme({
       },
     }
   },
+  spacing: factor => `${0.25 * factor}rem`,
   typography: {
     fontFamily: 'Quicksand, open sans, sans-serif',
   },

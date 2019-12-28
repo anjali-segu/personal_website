@@ -32,7 +32,7 @@ const useStyles = makeStyles(
           backgroundPosition: 'center',
           backgroundSize: 'cover',
           filter: 'grayscale(0.75)',
-          height: theme.spacing(35),
+          height: theme.spacing(75),
           textAlign: 'center',
         }
       },
@@ -48,7 +48,7 @@ const useStyles = makeStyles(
       },
       subHeader: {
         color: 'inherit',
-        paddingTop: theme.spacing(6),
+        paddingTop: theme.spacing(20),
       },
       overlay: {
         backgroundColor: 'transparent',

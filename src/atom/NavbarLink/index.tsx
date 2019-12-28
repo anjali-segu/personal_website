@@ -6,7 +6,7 @@ import {Link as RouterLink} from 'react-router-dom'
 import {white, beige} from '../../utils/theme'
 
 interface Props {
-  content: string,
+  content: any,
   url: string,
 }
 

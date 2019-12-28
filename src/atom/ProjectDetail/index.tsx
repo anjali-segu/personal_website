@@ -26,8 +26,9 @@ const useStyles = makeStyles(
         paddingBottom: theme.spacing(1),
       },
       imageDetail: {
-        height: theme.spacing(50),
-        width: theme.spacing(75),
+        height: theme.spacing(64),
+        width: theme.spacing(120),
+        minWidth: '100%',
       },
     }
   }

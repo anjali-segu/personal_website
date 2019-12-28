@@ -30,6 +30,9 @@ const useStyles = makeStyles(
       cardSpacer: {
         paddingLeft: theme.spacing(1),
         paddingRight: theme.spacing(1),
+        [theme.breakpoints.down('sm')]: {
+          paddingBottom: theme.spacing(4),
+        },
       },
       title: {
         marginBottom: theme.spacing(5),
@@ -39,6 +42,9 @@ const useStyles = makeStyles(
       subtitle: {
         fontFamily: 'Quicksand, open sans, sans-serif',
         textAlign: 'center' as 'center',
+        [theme.breakpoints.down('sm')]: {
+          paddingBottom: theme.spacing(4),
+        },
       },
       spacer: {
         marginBottom: theme.spacing(6),
@@ -71,7 +77,7 @@ const Showcase = (props:Props) => {
 
         <Grid item md={12} className={classes.spacer} />
 
-        <Grid item md={4} className={classes.cardSpacer} >
+        <Grid item md={4} xs={12} className={classes.cardSpacer} >
           <ProjectCard
             image={'ProjectsMedia/ArtworkCorporate.jpg'}
             title={'Artwork Corporate'}
@@ -80,7 +86,7 @@ const Showcase = (props:Props) => {
           />
         </Grid>
 
-        <Grid item md={4} className={classes.cardSpacer} >
+        <Grid item md={4} xs={12} className={classes.cardSpacer} >
           <ProjectCard
             image={'ProjectsMedia/CodingProjectsGame.png'}
             video={'ProjectsMedia/CodingProjectGameVideo.mp4'}
@@ -90,7 +96,7 @@ const Showcase = (props:Props) => {
           />
         </Grid>
 
-        <Grid item md={4} className={classes.cardSpacer} >
+        <Grid item md={4} xs={12} className={classes.cardSpacer} >
           <ProjectCard
             image={'ProjectsMedia/CodingProjectCherryGiver.png'}
             title={'CherryGiver'}
@@ -102,9 +108,9 @@ const Showcase = (props:Props) => {
           />
         </Grid>
 
-        <Grid item md={12} className={classes.spacer} />
+        <Grid item md={12} xs={12} className={classes.spacer} />
 
-        <Grid item md={12} className={classes.actionWrapper} >
+        <Grid item md={12} xs={12} className={classes.actionWrapper} >
           <Button
             className={classes.actionButton}
             variant={'contained'}
