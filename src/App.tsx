@@ -6,6 +6,8 @@ import {theme} from './utils/theme'
 
 import Navbar from './organism/Navbar'
 import Home from './organism/Home'
+import About from './organism/About'
+import Footer from './organism/Footer'
 
 import {
   BrowserRouter as Router,
@@ -22,22 +24,27 @@ const App: React.FC = () => {
         <Switch>
           <Route path="/" exact>
             <Home />
+            <Footer/>
           </Route>
 
           <Route path="/portfolio" exact>
             <Home />
+            <Footer/>
           </Route>
 
           <Route path="/about" exact>
-            <Home />
+            <About/>
+            <Footer/>
           </Route>
 
           <Route path="/resume" exact>
             <Home />
+            <Footer/>
           </Route>
 
           <Route path="/contact" exact>
             <Home />
+            <Footer/>
           </Route>
         </Switch>
       </Router>

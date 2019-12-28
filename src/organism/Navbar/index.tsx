@@ -3,8 +3,7 @@ import AppBar from '@material-ui/core/AppBar'
 import Toolbar from '@material-ui/core/Toolbar'
 import {Theme, useTheme, makeStyles} from '@material-ui/core/styles'
 import useMediaQuery from '@material-ui/core/useMediaQuery'
-import Grid from '@material-ui/core/Grid'
-import SvgIcon from '../../atom/Logo.svg'
+
 
 import NavbarLink from '../../atom/NavbarLink'
 import MobileAppbar from '../../molecule/MobileAppbar'
@@ -44,7 +43,7 @@ const Navbar = (props:Props) => {
               src={`${process.env.PUBLIC_URL}/Logo.svg`}
             />
           }
-          url={'/portfolio'}
+          url={'/'}
         />
 
         <NavbarLink

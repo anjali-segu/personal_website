@@ -19,7 +19,7 @@ const useStyles = makeStyles(
       backgroundImage: (props:Props) => {
         return {
           backgroundImage: `url("${process.env.PUBLIC_URL}/${props.image}")`,
-          backgroundPosition: 'center',
+          backgroundPosition: 'cover',
           backgroundSize: 'auto',
         }
       },

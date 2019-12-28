@@ -79,10 +79,26 @@ const Showcase = (props:Props) => {
 
         <Grid item md={4} xs={12} className={classes.cardSpacer} >
           <ProjectCard
-            image={'ProjectsMedia/ArtworkCorporate.jpg'}
-            title={'Artwork Corporate'}
-            description={'Artwork Corporate'}
-            projectType={ProjectType.art}
+          image={'ProjectsMedia/CodingProjectCherryGiver.png'}
+          video = {'ProjectsMedia/CodingProjectCherryGiver.mp4'}
+          title= {'CherryGiver'}
+          description={
+            `I pioneered a scalable web platform(www.cherrygiver.org)
+            that allows charities to launch targeted and transparent fundraising
+            campaigns within minutes and connect with users`}
+          projectType={ProjectType.coding}
+          />
+        </Grid>
+
+        <Grid item md={4} xs={12} className={classes.cardSpacer} >
+          <ProjectCard
+          image={'ProjectsMedia/LeadershipGirlsCode1.jpeg'}
+          title={'GirlsCode'}
+          description={
+            `Designed an immersive 36-week curriculum for a class of 15 females
+             in elementary school, exposing them to technology and computer
+             science fundamentals`}
+          projectType={ProjectType.leadership}
           />
         </Grid>
 
@@ -92,18 +108,6 @@ const Showcase = (props:Props) => {
             video={'ProjectsMedia/CodingProjectGameVideo.mp4'}
             title={'Pollinator Game'}
             description={'Utilizing Java and Greenfoot I created a game that allows users to collect pollen and boosts.'}
-            projectType={ProjectType.art}
-          />
-        </Grid>
-
-        <Grid item md={4} xs={12} className={classes.cardSpacer} >
-          <ProjectCard
-            image={'ProjectsMedia/CodingProjectCherryGiver.png'}
-            title={'CherryGiver'}
-            description={
-              `I pioneered a scalable web platform(www.cherrygiver.org)
-              that allows charities to launch targeted and transparent fundraising
-              campaigns within minutes and connect with users`}
             projectType={ProjectType.coding}
           />
         </Grid>
