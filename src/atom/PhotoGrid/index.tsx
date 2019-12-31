@@ -1,7 +1,7 @@
 import * as React from 'react'
 import {lightbeige} from '../../utils/theme'
 import Panel from '../../atom/Panel'
-import {Theme, makeStyles} from '@material-ui/core/styles'
+import {makeStyles} from '@material-ui/core/styles'
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
 

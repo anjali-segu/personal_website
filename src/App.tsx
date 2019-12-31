@@ -8,6 +8,7 @@ import Navbar from './organism/Navbar'
 import Home from './organism/Home'
 import About from './organism/About'
 import Footer from './organism/Footer'
+import Portfolio from './organism/Portfolio'
 
 import {
   BrowserRouter as Router,
@@ -28,7 +29,7 @@ const App: React.FC = () => {
           </Route>
 
           <Route path="/portfolio" exact>
-            <Home />
+            <Portfolio/>
             <Footer/>
           </Route>
 
