@@ -139,6 +139,43 @@ const PortfolioGrid = () => {
 
       <Grid item md={12} xs={12} className={classes.spacer} />
 
+      <Grid item md={4} xs={12} className={classes.cardSpacer} >
+        <ProjectCard
+        image={'ProjectsMedia/ArtworkFaces.jpg'}
+        title= {'Decomposed Characters'}
+        description={
+          `Each body part has so much character, emotion, and personality portrayed
+          through decomposing each element of the face. This piece was completed
+          in solely pencil.`}
+        projectType={ProjectType.art}
+        />
+      </Grid>
+
+      <Grid item md={4} xs={12} className={classes.cardSpacer} >
+        <ProjectCard
+        image={'ProjectsMedia/LeadershipSWE.png'}
+        title={'SWELites Stemfest Coordinator'}
+        description={
+          `Organized STEMfest, a day-long event where 120 Girl Scouts
+          in elementary, middle school and high school learned various
+          STEM topics through interactive activities offered by Texas A&M
+          University`}
+        projectType={ProjectType.leadership}
+        />
+      </Grid>
+
+      <Grid item md={4} xs={12} className={classes.cardSpacer} >
+        <ProjectCard
+          image={'ProjectsMedia/ArtworkFlower.jpg'}
+          title={'Stark Flower'}
+          description={`A piece painted in india ink and water color
+            playing with the concept of color and shadows.  `}
+          projectType={ProjectType.art}
+        />
+      </Grid>
+
+      <Grid item md={12} xs={12} className={classes.spacer} />
+
       </Grid>
     </Panel>
   )
