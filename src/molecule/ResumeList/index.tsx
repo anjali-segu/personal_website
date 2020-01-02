@@ -3,7 +3,6 @@ import * as React from 'react'
 import Typography from '@material-ui/core/Typography'
 import {Theme, makeStyles} from '@material-ui/core/styles'
 
-import Panel from '../../atom/Panel'
 import ResumeItem from '../../atom/ResumeItem'
 import {black} from '../../utils/theme'
 
@@ -49,7 +48,7 @@ const ResumeList = (props:Props) => {
         </Typography>
         <ResumeItem
         description={
-          `Pioneered a scalable web platform(www.cherrygiver.org) that allows charities
+          `Pioneered a scalable web platform (www.cherrygiver.org) that allows charities
            to launch targeted and transparentfundraising campaigns within minutes
            and connect with users. Partnered with three local Austin charities to
            host their fundraising needs, and implemented new features based
