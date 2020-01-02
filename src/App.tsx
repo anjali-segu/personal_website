@@ -9,6 +9,7 @@ import Home from './organism/Home'
 import About from './organism/About'
 import Footer from './organism/Footer'
 import Portfolio from './organism/Portfolio'
+import Resume from './organism/Resume'
 
 import {
   BrowserRouter as Router,
@@ -39,7 +40,7 @@ const App: React.FC = () => {
           </Route>
 
           <Route path="/resume" exact>
-            <Home />
+            <Resume/>
             <Footer/>
           </Route>
 

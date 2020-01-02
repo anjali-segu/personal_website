@@ -32,7 +32,7 @@ const Bio = (props:Props) => {
         <Grid item md={2} />
         <Grid item md={8}>
           <Typography variant={'h3'} className={classes.title}>
-            {'I\'m a front-end developer'}
+            {'I\'m a front-end developer.'}
           </Typography>
           <Typography variant={'h5'} className={classes.subtitle}>
             {'My passions are utilizing web development to bring out the best in any company or organization. How you market yourself is powerful in this digital age.'}
