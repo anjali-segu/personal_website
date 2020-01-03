@@ -45,7 +45,10 @@ const Navbar = (props:Props) => {
           }
           url={'/'}
         />
-
+        <NavbarLink
+          content={'home'}
+          url={'/'}
+        />
         <NavbarLink
           content={'portfolio'}
           url={'/portfolio'}

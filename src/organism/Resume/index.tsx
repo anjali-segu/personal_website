@@ -4,6 +4,7 @@ import Grid from '@material-ui/core/Grid'
 import Button from '@material-ui/core/Button'
 
 import HeaderPanel from '../../atom/HeaderPanel'
+import SkillsTech from '../../atom/SkillsTech'
 import Panel from '../../atom/Panel'
 import ResumeList from '../../molecule/ResumeList'
 import {gray,tan,black} from '../../utils/theme'
@@ -32,9 +33,10 @@ const Resume = (props:Props) => {
   return (
     <React.Fragment>
       <HeaderPanel
-        image={'About.jpeg'}
+        image={'writing.jpeg'}
         title={'My Experience'}
       />
+      <SkillsTech/>
       <Panel backgroundColor={gray}>
         <Grid container>
           <Grid item md={10}/>

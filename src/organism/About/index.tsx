@@ -9,7 +9,7 @@ const About = () => {
   return (
       <React.Fragment>
         <HeaderPanel
-          image={'About.jpeg'}
+          image={'laughing.jpeg'}
           title={'My Passions '}
         />
         <FunFacts/>

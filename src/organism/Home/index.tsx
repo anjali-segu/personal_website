@@ -9,7 +9,7 @@ const Home = () => {
   return (
     <React.Fragment>
       <HeaderPanel
-        image={'computercoffee.jpeg'}
+        image={'home.jpeg'}
         title={'Anjali Segu'}
       />
       <Bio/>

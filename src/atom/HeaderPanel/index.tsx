@@ -20,7 +20,10 @@ const useStyles = makeStyles(
         return {
           backgroundImage: `url("${process.env.PUBLIC_URL}/${props.image}")`,
           backgroundPosition: 'cover',
-          backgroundSize: 'auto',
+          backgroundSize: 'cover',
+          [theme.breakpoints.down('sm')]: {
+            backgroundImage: `url("${process.env.PUBLIC_URL}/small${props.image}")`,
+          },
         }
       },
       overlay: {
@@ -38,6 +41,9 @@ const useStyles = makeStyles(
         paddingLeft: theme.spacing(5),
         paddingRight: theme.spacing(5),
         paddingTop: theme.spacing(30),
+        [theme.breakpoints.down('sm')]: {
+          fontSize: '4rem',
+        },
       }
     }
   }
