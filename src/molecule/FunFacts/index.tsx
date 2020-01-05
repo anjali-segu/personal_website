@@ -10,6 +10,9 @@ const useStyles = makeStyles(
     return {
       image: {
           width: theme.spacing(100),
+          [theme.breakpoints.down('sm')]: {
+            width: theme.spacing(80),
+          },
         },
       facts: {
         fontFamily: 'Quicksand, open sans, sans-serif',
@@ -18,6 +21,16 @@ const useStyles = makeStyles(
       factsSpacer: {
         paddingTop: theme.spacing(15),
         paddingRight: theme.spacing(10),
+        [theme.breakpoints.down('sm')]: {
+          paddingRight: theme.spacing(0),
+          paddingBottom: theme.spacing(5),
+          paddingTop: theme.spacing(3),
+        },
+      },
+      imagecenter: {
+        [theme.breakpoints.down('sm')]: {
+          textAlign: 'center',
+        },
       },
       }
     }
@@ -33,11 +46,11 @@ const FunFacts = () => {
       <Grid container>
         <Grid item md={2} />
 
-          <Grid item md={4} className = {classes.factsSpacer}>
+          <Grid item md={4} xs={12} className={classes.factsSpacer}>
             <Typography variant={'h4'}>
               {'Some fun facts about myself.'}
             </Typography>
-            <Typography className = {classes.facts} variant={'h6'}>
+            <Typography className={classes.facts} variant={'h6'}>
               {`I currently live in Austin and am a freshman at Texas A&M.
                 I am a huge foodie, love photography, and do traditional indian dancing
                 as well as act in my free time in downtown Austin. I have a Cavalier
@@ -45,7 +58,7 @@ const FunFacts = () => {
             </Typography>
           </Grid>
 
-          <Grid item md={4}>
+          <Grid className={classes.imagecenter} item md={4} xs={12}>
             <img className= {classes.image} src={process.env.PUBLIC_URL + '/Austin.jpeg'} />
           </Grid>
 

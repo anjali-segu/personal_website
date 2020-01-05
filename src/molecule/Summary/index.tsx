@@ -44,7 +44,7 @@ const Summary = (props:Props) => {
           <Typography variant={'h4'} className={classes.title}>
             {`
               My background in art and computer science allows
-              me to create custom sites built with React.
+              me to create custom sites.
             `}
           </Typography>
         </Grid>

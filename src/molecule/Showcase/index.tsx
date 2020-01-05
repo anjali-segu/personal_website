@@ -3,6 +3,7 @@ import Typography from '@material-ui/core/Typography'
 import {Theme, makeStyles} from '@material-ui/core/styles'
 import Button from '@material-ui/core/Button'
 import Grid from '@material-ui/core/Grid'
+import MaterialLink from '@material-ui/core/Link'
 import {Link as RouterLink} from 'react-router-dom'
 
 import Panel from '../../atom/Panel'
@@ -83,9 +84,13 @@ const Showcase = (props:Props) => {
           video = {'ProjectsMedia/CodingProjectCherryGiver.mp4'}
           title= {'CherryGiver'}
           description={
-            `I pioneered a scalable web platform(www.cherrygiver.org)
-            that allows charities to launch targeted and transparent fundraising
-            campaigns within minutes and connect with users`}
+            [
+              `I pioneered a scalable web platform (`,
+              <MaterialLink href={'https://www.cherrygiver.org'} target={'_blank'}>www.cherrygiver.org</MaterialLink>
+              ,
+              `) that allows charities to launch targeted and transparent fundraising
+              campaigns within minutes and connect with users`
+            ]}
           projectType={ProjectType.coding}
           />
         </Grid>

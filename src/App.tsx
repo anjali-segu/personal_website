@@ -26,29 +26,25 @@ const App: React.FC = () => {
         <Switch>
           <Route path="/" exact>
             <Home />
-            <Footer/>
           </Route>
 
           <Route path="/portfolio" exact>
             <Portfolio/>
-            <Footer/>
           </Route>
 
           <Route path="/about" exact>
             <About/>
-            <Footer/>
           </Route>
 
           <Route path="/resume" exact>
             <Resume/>
-            <Footer/>
           </Route>
 
           <Route path="/contact" exact>
             <Home />
-            <Footer/>
           </Route>
         </Switch>
+        <Footer/>
       </Router>
     </ThemeProvider>
   );

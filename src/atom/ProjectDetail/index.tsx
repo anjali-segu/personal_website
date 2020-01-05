@@ -7,7 +7,7 @@ import CardMedia from '@material-ui/core/CardMedia'
 import Card from '@material-ui/core/Card'
 
 interface Props {
-  description: string,
+  description: string | any[],
   image: string,
   title: string,
   video?: string,

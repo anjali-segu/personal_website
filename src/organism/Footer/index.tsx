@@ -6,6 +6,7 @@ import {Theme, makeStyles} from '@material-ui/core/styles'
 import Panel from '../../atom/Panel'
 import Navbar from '../Navbar'
 import {white,charcoal} from '../../utils/theme'
+import IconBar from '../../atom/IconBar'
 
 const useStyles = makeStyles(
   (theme:Theme) => {
@@ -13,6 +14,7 @@ const useStyles = makeStyles(
       footerTitle: {
           color: white,
           textAlign: 'center',
+          marginBottom: theme.spacing(12),
         },
       }
     }
@@ -30,6 +32,8 @@ const Footer = (props:Props) => {
       <Typography className={classes.footerTitle} variant={'h4'}>
         {'Interested in doing a project together?'}
       </Typography>
+      <Navbar position={'sticky'} />
+      <IconBar/>
     </Panel>
   )
 }

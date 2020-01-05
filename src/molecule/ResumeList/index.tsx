@@ -2,6 +2,7 @@ import * as React from 'react'
 
 import Typography from '@material-ui/core/Typography'
 import {Theme, makeStyles} from '@material-ui/core/styles'
+import Link from '@material-ui/core/Link'
 
 import ResumeItem from '../../atom/ResumeItem'
 import {black} from '../../utils/theme'
@@ -48,14 +49,17 @@ const ResumeList = (props:Props) => {
         </Typography>
         <ResumeItem
         description={
-          `Pioneered a scalable web platform (www.cherrygiver.org) that allows charities
-           to launch targeted and transparentfundraising campaigns within minutes
-           and connect with users. Partnered with three local Austin charities to
-           host their fundraising needs, and implemented new features based
-           on their feedback. Bootstrapped the project by developing with the
-           Django web server framework and hosted the application on Heroku.
-           Engineered a responsive user interface using Material UI, Javascript,
-           and HTML/CSS.`}
+          [`Pioneered a scalable web platform (`,
+            <Link href={'https://www.cherrygiver.org'} target={'_blank'}>www.cherrygiver.org</Link>,
+            `) that allows charities
+            to launch targeted and transparent fundraising campaigns within minutes
+            and connect with users. Partnered with three local Austin charities to
+            host their fundraising needs, and implemented new features based
+            on their feedback. Bootstrapped the project by developing with the
+            Django web server framework and hosted the application on Heroku.
+            Engineered a responsive user interface using Material UI, Javascript,
+            and HTML/CSS.
+          `]}
         title={'CherryGiver, ​Austin, Texas'}
         role={'Founder and Lead Developer'}
         time={'Aug 2017 – Present'}

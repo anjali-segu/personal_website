@@ -1,10 +1,14 @@
 import * as React from 'react'
+
+import {makeStyles, useTheme} from '@material-ui/core/styles'
+import useMediaQuery from '@material-ui/core/useMediaQuery'
+
+import Box from '@material-ui/core/Box'
+import GridList from '@material-ui/core/GridList'
+import GridListTile from '@material-ui/core/GridListTile'
+
 import {lightbeige} from '../../utils/theme'
 import Panel from '../../atom/Panel'
-import {makeStyles} from '@material-ui/core/styles'
-import GridList from '@material-ui/core/GridList';
-import GridListTile from '@material-ui/core/GridListTile';
-
 
 
 const useStyles = makeStyles(theme => ({
@@ -17,8 +21,9 @@ const useStyles = makeStyles(theme => ({
 
   },
   gridList: {
-    width: theme.spacing(500),
-    height: theme.spacing(100),
+    overflowY: 'unset',
+    width: '100%',
+    height: 'auto',
   },
   image: {
     filter: 'grayscale(0.25)',
@@ -31,22 +36,22 @@ interface Props {
 
 const tileData = [
   {
-      img: process.env.PUBLIC_URL + '/PhotoGrid1.jpeg',
+    img: 'PhotoGrid1.jpeg',
   },
   {
-    img: process.env.PUBLIC_URL + '/PhotoGrid5.jpeg',
+    img: 'PhotoGrid5.jpeg',
   },
   {
-    img: process.env.PUBLIC_URL + '/PhotoGrid2.jpeg',
+    img: 'PhotoGrid2.jpeg',
   },
   {
-    img: process.env.PUBLIC_URL + '/PhotoGrid3.jpeg',
+    img: 'PhotoGrid3.jpeg',
   },
   {
-    img: process.env.PUBLIC_URL + '/PhotoGrid6.jpeg',
+    img: 'PhotoGrid6.jpeg',
   },
   {
-    img: process.env.PUBLIC_URL + '/PhotoGrid4.jpeg',
+    img: 'PhotoGrid4.jpeg',
   },
 
 ];
@@ -54,17 +59,24 @@ const tileData = [
 
 const PhotoGrid = () => {
   const classes = useStyles()
+  const theme = useTheme()
+  const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
+
   return (
     <Panel backgroundColor={lightbeige}>
-      <div className={classes.root}>
-        <GridList cellHeight={400} className={classes.gridList} cols={3}>
+      <Box className={classes.root}>
+        <GridList
+          cellHeight={400}
+          className={classes.gridList}
+          cols={isMobile ? 1 : 3}
+        >
           {tileData.map(tile => (
             <GridListTile key={tile.img} cols = {1}>
-              <img className={classes.image} src={tile.img}/>
+              <img className={classes.image} src={`${process.env.PUBLIC_URL}/${tile.img}`}/>
             </GridListTile>
           ))}
         </GridList>
-      </div>
+      </Box>
     </Panel>
   )
 }

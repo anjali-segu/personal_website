@@ -16,7 +16,7 @@ export enum ProjectType {
 }
 
 interface Props {
-  description: string,
+  description: string | any[],
   image: string,
   projectType: ProjectType,
   title: string,

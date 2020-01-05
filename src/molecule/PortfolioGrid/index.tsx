@@ -3,6 +3,8 @@ import * as React from 'react'
 import ProjectCard, {ProjectType} from '../../molecule/ProjectCard'
 import {Theme, makeStyles} from '@material-ui/core/styles'
 import Grid from '@material-ui/core/Grid'
+import Link from '@material-ui/core/Link'
+
 import Panel from '../../atom/Panel'
 import {gray} from '../../utils/theme'
 
@@ -42,14 +44,20 @@ const PortfolioGrid = () => {
 
       <Grid item md={4} xs={12} className={classes.cardSpacer} >
         <ProjectCard
-        image={'ProjectsMedia/CodingProjectCherryGiver.png'}
-        video = {'ProjectsMedia/CodingProjectCherryGiver.mp4'}
-        title= {'CherryGiver'}
-        description={
-          `I pioneered a scalable web platform(www.cherrygiver.org)
-          that allows charities to launch targeted and transparent fundraising
-          campaigns within minutes and connect with users.`}
-        projectType={ProjectType.coding}
+          image={'ProjectsMedia/CodingProjectCherryGiver.png'}
+          video = {'ProjectsMedia/CodingProjectCherryGiver.mp4'}
+          title= {'CherryGiver'}
+          description={
+            [
+              `
+              I pioneered a scalable web platform (`,
+              <Link href={'https://www.cherrygiver.org'} target={'_blank'}>{'www.cherrygiver.org'}</Link>,
+              `)
+              that allows charities to launch targeted and transparent fundraising
+              campaigns within minutes and connect with users.
+              `
+            ]}
+          projectType={ProjectType.coding}
         />
       </Grid>
 

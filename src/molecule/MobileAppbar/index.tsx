@@ -56,6 +56,11 @@ const MobileAppbar = (props:Props) => {
         <List className={classes.sidebar}>
           <SidebarLink
             closeHandler={() => { setShowSidebar(false)}}
+            content={'home'}
+            url={'/'}
+          />
+          <SidebarLink
+            closeHandler={() => { setShowSidebar(false)}}
             content={'portfolio'}
             url={'/portfolio'}
           />

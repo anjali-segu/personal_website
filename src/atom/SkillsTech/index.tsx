@@ -32,6 +32,12 @@ const useStyles = makeStyles(
       center: {
         textAlign: 'center',
       },
+      specialspacing: {
+        textAlign: 'center',
+        [theme.breakpoints.down('sm')]: {
+          paddingTop: theme.spacing(4),
+        },
+      },
       }
     }
 )
@@ -50,19 +56,20 @@ const SkillsTech = () => {
         <Grid item className={classes.spacer} md={12} xs={12}/>
         <Grid item md={2}/>
 
-        <Grid className= {classes.center} item md={2}>
+        <Grid className= {classes.center} item md={2} xs={6}>
             <img className= {classes.image} src={process.env.PUBLIC_URL + '/LanguageIcons/CSSlogo.png'} />
         </Grid>
 
-        <Grid className= {classes.center} item md={2}>
+        <Grid className= {classes.center} item md={2} xs={6}>
             <img className= {classes.image} src={process.env.PUBLIC_URL + '/LanguageIcons/HTMLlogo.png'} />
         </Grid>
 
-        <Grid className= {classes.center} item md={2}>
+
+        <Grid className= {classes.specialspacing} item md={2} xs={6}>
             <img className= {classes.largerimage} src={process.env.PUBLIC_URL + '/LanguageIcons/JavaScriptlogo.png'} />
         </Grid>
 
-        <Grid className= {classes.center} item md={2}>
+        <Grid className= {classes.center} item md={2} xs={6}>
             <img className= {classes.image} src={process.env.PUBLIC_URL + '/LanguageIcons/Reactlogo.png'} />
         </Grid>
 
@@ -72,20 +79,21 @@ const SkillsTech = () => {
 
         <Grid item md={2}/>
 
-        <Grid className= {classes.center} item md={2}>
+        <Grid className= {classes.center} item md={2} xs={6}>
             <img className= {classes.largerimage} src={process.env.PUBLIC_URL + '/LanguageIcons/TypeScriptlogo.png'} />
         </Grid>
 
-        <Grid className= {classes.center} item md={2}>
-            <img className= {classes.largerimage} src={process.env.PUBLIC_URL + '/LanguageIcons/Javalogo.png'} />
-        </Grid>
-
-        <Grid className= {classes.center} item md={2}>
+        <Grid className= {classes.center} item md={2} xs={6}>
             <img className= {classes.largerimage} src={process.env.PUBLIC_URL + '/LanguageIcons/pythonlogo.png'} />
         </Grid>
 
-        <Grid className= {classes.center} item md={2}>
+
+        <Grid className= {classes.specialspacing} item md={2} xs={6}>
             <img className= {classes.largerimage} src={process.env.PUBLIC_URL + '/LanguageIcons/githublogo.png'} />
+        </Grid>
+
+        <Grid className= {classes.center} item md={2} xs={6}>
+            <img className= {classes.largerimage} src={process.env.PUBLIC_URL + '/LanguageIcons/Javalogo.png'} />
         </Grid>
 
         <Grid item md={2}/>

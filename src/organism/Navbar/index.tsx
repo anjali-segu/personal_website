@@ -9,7 +9,7 @@ import NavbarLink from '../../atom/NavbarLink'
 import MobileAppbar from '../../molecule/MobileAppbar'
 
 interface Props {
-
+  position?: 'fixed' | 'absolute' | 'sticky' | 'relative' | undefined,
 }
 
 const useStyles = makeStyles(
@@ -23,6 +23,7 @@ const useStyles = makeStyles(
 )
 
 const Navbar = (props:Props) => {
+  const {position} = props
   const theme = useTheme()
   const isMobile = useMediaQuery(theme.breakpoints.down('sm'))
   const classes = useStyles()
@@ -34,7 +35,7 @@ const Navbar = (props:Props) => {
   }
 
   return (
-    <AppBar position={'absolute'}>
+    <AppBar position={position}>
       <Toolbar>
         <NavbarLink
           content={
@@ -68,6 +69,10 @@ const Navbar = (props:Props) => {
       </Toolbar>
     </AppBar>
   )
+}
+
+Navbar.defaultProps = {
+  position: 'absolute',
 }
 
 export default Navbar

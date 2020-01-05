@@ -24,6 +24,11 @@ const useStyles = makeStyles(
           color: tan,
         },
       },
+      buttonspacing: {
+        [theme.breakpoints.down('sm')]: {
+          paddingBottom: theme.spacing(8),
+        },
+      },
       }
     }
 )
@@ -38,10 +43,11 @@ const Resume = (props:Props) => {
       />
       <SkillsTech/>
       <Panel backgroundColor={gray}>
-        <Grid container>
-          <Grid item md={10}/>
-          <Grid item md={2}>
+        <Grid container className={classes.buttonspacing}>
+          <Grid item md={10} xs={4}/>
+          <Grid item md={2} xs={8}>
             <Button
+              download
               className={classes.actionButton}
               variant={'contained'}
               color={'primary'}
