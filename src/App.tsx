@@ -12,7 +12,7 @@ import Portfolio from './organism/Portfolio'
 import Resume from './organism/Resume'
 
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Switch,
   Route,
 } from 'react-router-dom'
@@ -20,7 +20,7 @@ import {
 const App: React.FC = () => {
   return (
     <ThemeProvider theme={theme}>
-      <Router>
+      <Router basename={'/'}>
         <Navbar/>
 
         <Switch>
