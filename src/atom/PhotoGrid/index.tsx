@@ -36,7 +36,7 @@ interface Props {
 
 const tileData = [
   {
-    img: 'PhotoGrid1.jpeg',
+    img: 'PhotoGrid7.jpeg',
   },
   {
     img: 'PhotoGrid5.jpeg',
