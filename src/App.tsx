@@ -10,6 +10,7 @@ import About from './organism/About'
 import Footer from './organism/Footer'
 import Portfolio from './organism/Portfolio'
 import Resume from './organism/Resume'
+import Contact from './organism/Contact'
 
 import {
   HashRouter as Router,
@@ -41,7 +42,7 @@ const App: React.FC = () => {
           </Route>
 
           <Route path="/contact" exact>
-            <Home />
+            <Contact/>
           </Route>
         </Switch>
         <Footer/>

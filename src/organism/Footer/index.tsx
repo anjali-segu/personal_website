@@ -33,7 +33,7 @@ const Footer = (props:Props) => {
         {'Interested in doing a project together?'}
       </Typography>
       <Navbar position={'sticky'} />
-      <IconBar/>
+      <IconBar color={white}/>
     </Panel>
   )
 }

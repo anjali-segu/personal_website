@@ -9,28 +9,33 @@ import {Theme, makeStyles} from '@material-ui/core/styles'
 import {white,beige} from '../../utils/theme'
 
 interface Props {
-
+    color: string,
 }
 
 const useStyles = makeStyles(
   (theme:Theme) => {
     return {
-      iconColor: {
-          color: white,
-          '&:hover': {
-            color: beige,
-          },
-      },
       centerIcon: {
         textAlign: 'center',
       },
+      iconSize: {
+        fontSize: theme.spacing(5),
+      },
+      iconColor: (props:Props) => {
+        return {
+          color: props.color,
+          '&:hover': {
+            color: beige,
+          },
+        }
+      }
     }
   }
 )
 
 
 const IconBar = (props:Props) => {
-  const classes = useStyles()
+  const classes = useStyles(props)
   return (
     <Grid container>
       <Grid item xs={3}/>
