@@ -51,8 +51,8 @@ const FunFacts = () => {
               {'Some fun facts about myself.'}
             </Typography>
             <Typography className={classes.facts} variant={'h6'}>
-              {`I currently live in Austin and am a freshman at Texas A&M.
-                I am a huge foodie, love photography, and do traditional indian dancing
+              {`I currently live in Austin and am a sophomore at Texas A&M.
+                I am a huge foodie, love photography, paint, and do traditional indian dancing
                 as well as act in my free time in downtown Austin. I have a Cavalier
                 King Charles Spaniel named Dove and a South American parrot named Mr. Cutie.  `}
             </Typography>

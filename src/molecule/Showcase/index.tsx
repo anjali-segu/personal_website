@@ -80,40 +80,44 @@ const Showcase = (props:Props) => {
 
         <Grid item md={4} xs={12} className={classes.cardSpacer} >
           <ProjectCard
-          image={'ProjectsMedia/CodingProjectCherryGiver.png'}
-          video = {'ProjectsMedia/CodingProjectCherryGiver.mp4'}
-          title= {'CherryGiver'}
+          image={'ProjectsMedia/stemfest.JPG'}
+          title={'SWELites Stemfest Officer'}
           description={
-            [
-              `I pioneered a scalable web platform (`,
-              <MaterialLink href={'https://www.cherrygiver.org'} target={'_blank'}>www.cherrygiver.org</MaterialLink>
-              ,
-              `) that allows charities to launch targeted and transparent fundraising
-              campaigns within minutes and connect with users`
-            ]}
-          projectType={ProjectType.coding}
-          />
-        </Grid>
-
-        <Grid item md={4} xs={12} className={classes.cardSpacer} >
-          <ProjectCard
-          image={'ProjectsMedia/LeadershipGirlsCode1.jpeg'}
-          title={'GirlsCode'}
-          description={
-            `Designed an immersive 36-week curriculum for a class of 15 females
-             in elementary school, exposing them to technology and computer
-             science fundamentals`}
+            `Organized STEMfest, a day-long event where 120 Girl Scouts
+            in elementary, middle school and high school learned various
+            STEM topics through interactive activities offered by Texas A&M
+            University.`}
           projectType={ProjectType.leadership}
           />
         </Grid>
 
         <Grid item md={4} xs={12} className={classes.cardSpacer} >
           <ProjectCard
-            image={'ProjectsMedia/CodingProjectsGame.png'}
-            video={'ProjectsMedia/CodingProjectGameVideo.mp4'}
-            title={'Pollinator Game'}
-            description={'Utilizing Java and Greenfoot I created a game that allows users to collect pollen and boosts.'}
-            projectType={ProjectType.coding}
+            image={'ProjectsMedia/ArtInstallation.jpg'}
+            title= {'Custom Art Installation'}
+            description={
+              [
+                `
+                Professionally  designed a custom art installation for Capital Endocrine
+                & Diabetes, a local clinic. Created 35 pieces of custom art. Check out
+                all my `,
+                <MaterialLink href={'https://artinstallationced.wordpress.com/'} target={'_blank'}>{'pieces'}</MaterialLink>,
+                `
+                .`
+              ]}
+            projectType={ProjectType.art}
+          />
+        </Grid>
+
+        <Grid item md={4} xs={12} className={classes.cardSpacer} >
+          <ProjectCard
+          image={'ProjectsMedia/nebulaintern.jpg'}
+          title={'Nebuladata Internship'}
+          description={
+            `Expanded product portfolio by collecting web data on 5 leading streaming platforms
+            using XPaths and Browser Extensions. Researched platforms for UI/UX testing and
+            recommended options to leadership to improve the frontend.`}
+          projectType={ProjectType.coding}
           />
         </Grid>
 

@@ -13,6 +13,7 @@ export enum ProjectType {
   coding = 'Coding Project',
   art = 'Artwork',
   leadership = 'Leadership',
+  graphic = 'Graphic Design',
 }
 
 interface Props {

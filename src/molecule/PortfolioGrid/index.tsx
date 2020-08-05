@@ -30,6 +30,58 @@ const PortfolioGrid = () => {
   return (
     <Panel backgroundColor={gray}>
       <Grid container>
+      <Grid item md={4} xs={12} className={classes.cardSpacer} >
+        <ProjectCard
+        image={'ProjectsMedia/nebulaintern.jpg'}
+        title={'Nebuladata Internship'}
+        description={
+          `Expanded product portfolio by collecting web data on 5 leading streaming platforms
+          using XPaths and Browser Extensions. Researched platforms for UI/UX testing and
+          recommended options to leadership to improve the frontend.`}
+        projectType={ProjectType.coding}
+        />
+      </Grid>
+
+      <Grid item md={4} xs={12} className={classes.cardSpacer} >
+        <ProjectCard
+          image={'ProjectsMedia/ArtInstallation.jpg'}
+          title= {'Custom Art Installation'}
+          description={
+            [
+              `
+              Professionally  designed a custom art installation for Capital Endocrine
+              & Diabetes, a local clinic. Created 35 pieces of custom art. Check out
+              all my `,
+              <Link href={'https://artinstallationced.wordpress.com/'} target={'_blank'}>{'pieces'}</Link>,
+              `
+              .`
+            ]}
+          projectType={ProjectType.art}
+        />
+      </Grid>
+
+      <Grid item md={4} xs={12} className={classes.cardSpacer} >
+        <ProjectCard
+          image={'ProjectsMedia/nebulagraphic.png'}
+          title={'Nebuladata Branding'}
+          description={
+            [
+            `Created branding and graphics for Nebuladata.io. Designed custom logos, social media
+            banners, and graphics for all social media platforms. Currently the social media manager
+            of all Nebuladata accounts. Check out my work on Nebuladata's
+            `,
+            <Link href={'https://www.instagram.com/nebuladataio/'} target={'_blank'}>{'Instagram'}</Link>,
+            `
+            and
+            `,
+            <Link href={'https://twitter.com/nebuladataio'} target={'_blank'}>{'Twitter'}</Link>,
+            `
+            .`]}
+          projectType={ProjectType.graphic}
+        />
+      </Grid>
+
+      <Grid item md={12} xs={12} className={classes.spacer} />
 
       <Grid item md={4} xs={12} className={classes.cardSpacer} >
         <ProjectCard
@@ -125,13 +177,14 @@ const PortfolioGrid = () => {
 
       <Grid item md={4} xs={12} className={classes.cardSpacer} >
         <ProjectCard
-        image={'ProjectsMedia/locationfinderscreenshot.png'}
-        title={'Location Finder Java App'}
+        image={'ProjectsMedia/stemfest.JPG'}
+        title={'SWELites Stemfest Officer'}
         description={
-          `Programmed a Java application that takes in coordinate as inputs
-          and sorts through a spreadsheet to find locations within a specific
-          radius of coordinates. Has like, save, and comment functionality.`}
-        projectType={ProjectType.coding}
+          `Organized STEMfest, a day-long event where 120 Girl Scouts
+          in elementary, middle school and high school learned various
+          STEM topics through interactive activities offered by Texas A&M
+          University.`}
+        projectType={ProjectType.leadership}
         />
       </Grid>
 
@@ -161,14 +214,13 @@ const PortfolioGrid = () => {
 
       <Grid item md={4} xs={12} className={classes.cardSpacer} >
         <ProjectCard
-        image={'ProjectsMedia/LeadershipSWE.png'}
-        title={'SWELites Stemfest Coordinator'}
+        image={'ProjectsMedia/locationfinderscreenshot.png'}
+        title={'Location Finder Java App'}
         description={
-          `Organized STEMfest, a day-long event where 120 Girl Scouts
-          in elementary, middle school and high school learned various
-          STEM topics through interactive activities offered by Texas A&M
-          University`}
-        projectType={ProjectType.leadership}
+          `Programmed a Java application that takes in coordinate as inputs
+          and sorts through a spreadsheet to find locations within a specific
+          radius of coordinates. Has like, save, and comment functionality.`}
+        projectType={ProjectType.coding}
         />
       </Grid>
 

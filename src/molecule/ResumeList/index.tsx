@@ -34,7 +34,7 @@ const ResumeList = (props:Props) => {
         <ResumeItem
         description={
           `Bachelor of Science
-          in Computer Science, degree anticipated May 2023 GPA: 4.00`}
+          in Computer Science, degree anticipated Dec 2022 GPA: 4.00`}
         title={'Texas A&M University, ​College Station, Texas'}
         />
 
@@ -47,6 +47,15 @@ const ResumeList = (props:Props) => {
         <Typography className={classes.title} variant={'h4'}>
           {'Experience'}
         </Typography>
+        <ResumeItem
+        description={
+          `Expanded product portfolio by collecting web data on 5 leading streaming platforms using XPaths and Browser
+          Extensions. Launched a robust marketing strategy to acquire data panelists including revamped branding, social media, and
+          content marketing.Researched platforms for UI/UX testing and recommended options to leadership to improve the frontend.`}
+        title={'Nebuladata, ​New York, New York'}
+        role={'Software Engineer and Marketing Intern'}
+        time={'May 2020 – Present'}
+        />
         <ResumeItem
         description={
           [`Pioneered a scalable web platform (`,
@@ -62,7 +71,7 @@ const ResumeList = (props:Props) => {
           `]}
         title={'CherryGiver, ​Austin, Texas'}
         role={'Founder and Lead Developer'}
-        time={'Aug 2017 – Present'}
+        time={'Aug 2017 – May 2020'}
         />
         <ResumeItem
         description={
@@ -86,8 +95,17 @@ const ResumeList = (props:Props) => {
           aspects of event planning and corresponded with 200 university
           departments and organizations to ensure all activities were hosted successfully.`}
         title={'SWELites Texas A&M, ​College Station, Texas'}
-        role={'STEMFest Event Coordinator'}
+        role={'STEMFest Officer'}
         time={'Aug 2019 - Present'}
+        />
+        <ResumeItem
+        description={
+          `Developed activity recognition algorithms that can identify and understand a person’s behavior and actions.
+          Engineered wearable technologies and sensors that enhance a person’s senses and help people be more
+          cognizant of their environment.`}
+        title={'Sketch Recognition Lab, ​College Station, Texas'}
+        role={'Researcher'}
+        time={'Jan 2020 - May 2020'}
         />
         <ResumeItem
         description={
