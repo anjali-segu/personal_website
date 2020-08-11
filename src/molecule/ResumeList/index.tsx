@@ -49,12 +49,22 @@ const ResumeList = (props:Props) => {
         </Typography>
         <ResumeItem
         description={
-          `Expanded product portfolio by collecting web data on 5 leading streaming platforms using XPaths and Browser
-          Extensions. Launched a robust marketing strategy to acquire data panelists including revamped branding, social media, and
-          content marketing.Researched platforms for UI/UX testing and recommended options to leadership to improve the frontend.`}
+          `Expanded product portfolio by collecting web data on 6 leading streaming platforms using XPaths and Browser
+          Extensions. Launched an SEO optimization initiative to acquire users with revamped branding, social media,
+          and content marketing leading to ~2,000 weekly impressions and a 10% increase in users. Researched
+          platforms for UI/UX testing and recommended options to leadership to improve the frontend.`}
         title={'Nebuladata, ​New York, New York'}
         role={'Software Engineer and Marketing Intern'}
         time={'May 2020 – Present'}
+        />
+        <ResumeItem
+        description={
+          `Developed activity recognition algorithms that can identify and understand a person’s behavior and actions.
+          Engineered wearable technologies and sensors that enhance a person’s senses and help people be more
+          cognizant of their environment.`}
+        title={'Sketch Recognition Lab, ​College Station, Texas'}
+        role={'Researcher'}
+        time={'Jan 2020 - May 2020'}
         />
         <ResumeItem
         description={
@@ -81,15 +91,15 @@ const ResumeList = (props:Props) => {
           collect reimbursements owed on their behalf. Spearheaded social media
           campaigns on Facebook and Yelp leading to a 40% increase in appointments.`}
         title={'Capital Endocrine & Diabetes, ​Cedar Park, Texas'}
-        role={'Office Manager Assistant'}
+        role={'Operations Intern'}
         time={'July 2016 – Present'}
         />
         <Typography className={classes.title} variant={'h4'}>
-          {'Activites'}
+          {'Leadership'}
         </Typography>
         <ResumeItem
         description={
-          `Organized STEMfest, a day-long event where 120 Girl Scouts in elementary,
+          `Organized STEMfest, an educational event where 120 Girl Scouts in elementary,
           middle school and high school learned various STEM topics through
           interactive activities offered by Texas A&M University. Managed all
           aspects of event planning and corresponded with 200 university
@@ -97,15 +107,6 @@ const ResumeList = (props:Props) => {
         title={'SWELites Texas A&M, ​College Station, Texas'}
         role={'STEMFest Officer'}
         time={'Aug 2019 - Present'}
-        />
-        <ResumeItem
-        description={
-          `Developed activity recognition algorithms that can identify and understand a person’s behavior and actions.
-          Engineered wearable technologies and sensors that enhance a person’s senses and help people be more
-          cognizant of their environment.`}
-        title={'Sketch Recognition Lab, ​College Station, Texas'}
-        role={'Researcher'}
-        time={'Jan 2020 - May 2020'}
         />
         <ResumeItem
         description={
