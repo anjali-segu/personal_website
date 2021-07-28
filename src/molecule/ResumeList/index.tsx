@@ -49,6 +49,15 @@ const ResumeList = (props:Props) => {
         </Typography>
         <ResumeItem
         description={
+          `Analyzed a large dataset provided from a not-profit using Tableau and Alteryx and
+          recommended strategies to retain their donor base. Shadowed senior directors and
+          associates to learn front end development, consulting, design, and UI/UX concepts.`}
+        title={'PricewaterhouseCoopers, New York, New York'}
+        role={'Start Intern'}
+        time={'June 2021 – July 2021'}
+        />
+        <ResumeItem
+        description={
           `Expanded product portfolio by collecting web data on 6 leading streaming platforms using XPaths and Browser
           Extensions. Launched an SEO optimization initiative to acquire users with revamped branding, social media,
           and content marketing leading to ~2,000 weekly impressions and a 10% increase in users. Researched
@@ -99,6 +108,15 @@ const ResumeList = (props:Props) => {
         </Typography>
         <ResumeItem
         description={
+          `Elected to serve as Vice President for the Texas A&M SWE chapter containing 500 members.
+          Oversaw 5 officers to coordinate events containing 10-200+ attendees, and relayed status
+          updates to the executive team.`}
+        title={'SWE Texas A&M, ​College Station, Texas'}
+        role={'External Vice President'}
+        time={'May 2021 - Present'}
+        />
+        <ResumeItem
+        description={
           `Organized STEMfest, an educational event where 120 Girl Scouts in elementary,
           middle school and high school learned various STEM topics through
           interactive activities offered by Texas A&M University. Managed all
@@ -106,7 +124,7 @@ const ResumeList = (props:Props) => {
           departments and organizations to ensure all activities were hosted successfully.`}
         title={'SWELites Texas A&M, ​College Station, Texas'}
         role={'STEMFest Officer'}
-        time={'Aug 2019 - Present'}
+        time={'Aug 2019 - May 2021'}
         />
         <ResumeItem
         description={
